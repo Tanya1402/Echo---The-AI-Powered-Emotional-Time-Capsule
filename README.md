@@ -4,7 +4,7 @@ Unlike static journals or notes, Echo transforms reflections into living convers
 
 ---
 
-## ✨ Key Features  
+##  Key Features  
 
 - **🎭 Emotionally Intelligent Capsules**  
   Save memories as text, voice, or video. AI categorizes them by emotional context — *Motivation, Friendship, Career, Resilience,* and more.  
@@ -47,7 +47,7 @@ Unlike static journals or notes, Echo transforms reflections into living convers
 
 ---
 
-## 🚀 Getting Started  
+##  Getting Started  
 
 ### Prerequisites  
 - Node.js & npm  
