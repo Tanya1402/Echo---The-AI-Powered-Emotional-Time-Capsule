@@ -1,0 +1,402 @@
+/* Metallic ivory for headings and textarea */
+.ivory-heading {
+  background: linear-gradient(90deg, #fffff0 0%, #f8f8ff 40%, #e5e5e5 60%, #d4d4c8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow:
+  2px 2px 0 #000,
+  -2px 2px 0 #000,
+  2px -2px 0 #000,
+  -2px -2px 0 #000,
+    0 2px 8px #bfbfbf,
+    0 1px 0 #fff8,
+    0 0px 16px #fff4;
+}
+
+.ivory-textarea {
+  background: transparent;
+  color: #e5e5d4;
+  font-weight: 600;
+  border: 1.5px solid #e5e5d4;
+  border-radius: 8px;
+  box-shadow: 0 1px 8px #fff2;
+  padding: 0.5rem;
+  width: 90%;
+  min-height: 36px;
+  max-height: 80px;
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  resize: vertical;
+  text-shadow: 0 1px 2px #bfbfbf, 0 0px 8px #fff4;
+}
+.ivory-textarea::placeholder {
+  color: #f8f8ff;
+  opacity: 1;
+  font-weight: 500;
+  text-shadow: 0 1px 2px #bfbfbf, 0 0px 8px #fff4;
+}
+/* Metallic ivory for Echo heading */
+.echo-heading {
+  background: linear-gradient(90deg, #fffff0 0%, #f8f8ff 40%, #e5e5e5 60%, #d4d4c8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #bfbfbf, 0 1px 0 #fff8, 0 0px 16px #fff4;
+}
+/* Layout for fixing AIChat to the right */
+.ai-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.ai-chat-fixed {
+  position: fixed;
+  top: 80px;
+  right: 40px;
+  z-index: 100;
+}
+
+/* Center the main content and stack form/list vertically */
+.centered-main {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.center-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+}
+/* Global styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+/* App container */
+.App {
+  text-align: center;
+  padding: 2rem;
+  backdrop-filter: blur(4px);
+}
+
+/* Main heading */
+.App h1 {
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 4rem;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #FFD700 0%, #FFFACD 40%, #FFD700 60%, #B8860B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-shadow:
+    0 2px 8px #bfa640,
+    0 1px 0 #fff8,
+    0 0px 16px #fff4;
+  margin-bottom: 2rem;
+}
+
+/* Capsule section */
+.App h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
+/* Capsule cards */
+.capsule-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.2rem;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 900px;
+  min-height: 120px;
+}
+
+
+.capsule-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* Capsule form */
+.capsule-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.capsule-form input,
+.capsule-form textarea {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  width: 250px;
+  background: transparent;
+  color: #c0c0c0; /* metallic silver */
+  box-shadow: 0 0 0 1.5px #c0c0c0;
+  transition: box-shadow 0.2s, color 0.2s;
+  font-weight: 600;
+  text-shadow: 0 1px 2px #888, 0 0 8px #fff2;
+  /* Placeholder color handled below */
+}
+
+/* Metallic silver placeholder for all browsers */
+.capsule-form input::placeholder,
+.capsule-form textarea::placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+  font-weight: 600;
+  text-shadow: 0 1px 2px #888, 0 0 8px #fff2;
+}
+
+.capsule-form input:focus,
+.capsule-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2.5px #b0b0b0, 0 0 8px #fff8;
+  color: #e0e0e0;
+}
+
+.capsule-form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #7c5a3a 0%, #a3845c 40%, #5a3c1a 100%);
+  box-shadow: 0 2px 8px #3e2b1a44, 0 1px 0 #fff2;
+  box-shadow: 0 2px 8px #3e2b1a44, 0 1px 0 #fff2;
+  color: #fff8f0;
+  cursor: pointer;
+  font-weight: bold;;
+}
+
+.capsule-form button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #a3845c 0%, #7c5a3a 60%, #5a3c1a 100%);
+}
+
+/* No capsules message */
+.no-capsules {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+
+/* Responsive design */
+/* Layout: center for capsules, right for AI */
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  gap: 2.5rem;
+}
+
+/* Left section (form + capsules) */
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+}
+
+/* Capsule card alignment */
+.capsule-card {
+  background: rgba(0,0,0,0.22); /* more transparent */
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+/* AI Chat Styles */
+.ai-chat {
+  background: rgba(30, 30, 30, 0.22); /* slightly more translucent */
+  border: 2.5px solid #232323; /* deep charcoal */
+  padding: 1rem;
+  border-radius: 12px;
+  width: 300px;
+  height: 400px;
+  max-height: 400px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.ai-chat h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
+.chat-window {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 0.3rem;
+  max-height: 240px;
+  min-height: 80px;
+  box-sizing: border-box;
+  height: 240px;
+}
+
+.fixed-chat-window {
+  height: 320px;
+  max-height: 320px;
+  min-height: 120px;
+  overflow-y: auto;
+}
+.clear-chat-btn {
+  background: #ffd700;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  padding: 0.3rem 0.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 8px;
+  transition: background 0.2s;
+}
+.clear-chat-btn:hover {
+  background: #ffe066;
+}
+
+.chat-message {
+  margin-bottom: 1rem;
+}
+
+.user-msg {
+  /* Add your user message styles here, or leave empty if not needed */
+}
+/* Small capsule card with hover overlay for full content */
+.capsule-hover-card {
+  background: #fff3cd;
+  color: #222;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+  padding: 0.5rem 0.7rem;
+  min-width: 90px;
+  max-width: 110px;
+  min-height: 40px;
+  max-height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: box-shadow 0.2s, transform 0.2s, opacity 0.2s;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  overflow: visible;
+  justify-content: center;
+  opacity: 0.7;
+  z-index: 1;
+}
+.capsule-hover-card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  opacity: 1;
+  z-index: 3;
+}
+.capsule-card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  background: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  padding: 0.1rem 0.2rem;
+  z-index: 2;
+}
+.capsule-card-hover-content {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 180px;
+  max-width: 240px;
+  background: #fffbe8;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px 8px rgba(0,0,0,0.25);
+  padding: 0.7rem 1rem;
+  z-index: 20;
+  margin-top: 0.3rem;
+  color: #222;
+  opacity: 1;
+  border: 2px solid #ffd700;
+}
+.capsule-hover-card:hover .capsule-card-hover-content {
+  display: block;
+  opacity: 1;
+}
+.capsule-card-message {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+.capsule-card-meta {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 0.3rem;
+}
+.capsule-card-delete {
+  background: #ffd700;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  padding: 0.3rem 0.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+  transition: background 0.2s;
+}
+.capsule-card-delete:hover {
+  background: #ffe066;
+}
+.ai-chat button {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  background: linear-gradient(135deg, #7c5a3a 0%, #a3845c 40%, #5a3c1a 100%);
+  box-shadow: 0 2px 8px #3e2b1a44, 0 1px 0 #fff2;
+  color: #fff8f0;
+  cursor: pointer;
+  font-weight: bold;
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Making Friends",
+        "message": "You need to go out more. It was a great day with talking to stragers and playing  frizbee with them so push yourself out of your comfort zone to really get the best of networking and staying happy",
+        "future_date": "2025-09-03",
+        "category": "Motivation"
+    },
+    {
+        "id": 2,
+        "title": "friends",
+        "message": "make sure to reach out and get out of your comfort zone. liek today when i randomly met with starngers and played frizbie with them, i made new friends and even got invited to new parties. always have faith in your slef",
+        "future_date": "2025-09-09",
+        "category": "Motivation"
+    },
+    {
+        "id": 3,
+        "title": "eating out",
+        "message": "i tried a great restraunt today. it was sizen in san francisco",
+        "future_date": "2025-09-16",
+        "category": "Other"
+    },
+    {
+        "id": 4,
+        "title": "sports",
+        "message": "Tried new sport. pickel ball needs to have more focus on balancing and not a lot of people know it",
+        "future_date": "2025-09-16",
+        "category": "Other"
+    },
+    {
+        "id": 5,
+        "title": "investment",
+        "message": "the properties in indiana are cheap. great for investments",
+        "future_date": "2025-09-03",
+        "category": "Business"
+    },
+    {
+        "id": 6,
+        "title": "new activity",
+        "message": "Loved playing soccer. the key is to hit the ball from the side of your foot",
+        "future_date": "2025-09-02",
+        "category": "Other"
+    }
+]
