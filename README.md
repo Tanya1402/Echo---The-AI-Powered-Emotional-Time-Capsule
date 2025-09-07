@@ -1,12 +1,6 @@
 # 🌌 Echo: The AI-Powered Emotional Time Capsule  
 Echo is a next-generation AI-powered time capsule that captures your voice, memories, and emotions, then evolves them with emotional intelligence—delivering your own wisdom when you need it most. Echo is where memory meets AI, turning yesterday’s experiences into tomorrow’s guidance.
-
----
-
-## 📖 About Echo  
-Echo is a next-generation AI-powered time capsule that captures your voice, memories, and emotions, then evolves them with emotional intelligence—delivering your own wisdom, encouragement, and perspective exactly when you need them most.  
-
-Unlike static journals or notes, Echo transforms reflections into living conversations with your past self, bridging memory and growth through the power of AI.  
+Unlike static journals or notes, Echo transforms reflections into living conversations with your past self, bridging memory and growth through the power of AI
 
 ---
 
